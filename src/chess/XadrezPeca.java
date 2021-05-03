@@ -1,9 +1,9 @@
 package chess;
 
-import boardgame.Pecas;
+import boardgame.Peca;
 import boardgame.Tabuleiro;
 
-public class XadrezPeca extends Pecas{
+public class XadrezPeca extends Peca{
 	private Cor cor;
 
 	public XadrezPeca(Tabuleiro tabuleiro, Cor cor) {

@@ -3,13 +3,13 @@ package boardgame;
 public class Tabuleiro {
 	private int linhas;
 	private int colunas;
-	private Pecas[][] pecas;
+	private Peca[][] pecas;
 	
 	public Tabuleiro(int linhas, int colunas) {
 		
 		this.linhas = linhas;
 		this.colunas = colunas;
-		pecas = new Pecas[linhas][colunas];
+		pecas = new Peca[linhas][colunas];
 		
 	}
 	public int getColunas() {
@@ -19,19 +19,24 @@ public class Tabuleiro {
 	public int getLinhas() {
 		return linhas;
 	}
-	public Pecas[][] getPecas() {
+	public Peca[][] getPecas() {
 		return pecas;
 	}
-	public void setPecas(Pecas[][] pecas) {
+	public void setPecas(Peca[][] pecas) {
 		this.pecas = pecas;
 	}
-	public Pecas peca(int linha, int coluna) {
+	public Peca peca(int linha, int coluna) {
 		return pecas[linha][coluna];
 		
 	}
 	
-	public Pecas peca(Posicao posicao) {
+	public Peca peca(Posicao posicao) {
 		return pecas[posicao.getLinha()][posicao.getColuna()];
 		
+	}
+	
+	public void colocarPeca(Peca peca , Posicao posicao) {
+		pecas[posicao.getLinha()][posicao.getColuna()] = peca;
+		peca.posicao = posicao;
 	}
 }
