@@ -1,9 +1,9 @@
 package application;
 
-import chess.XadrezPeca;
+import chess.ChessPiece;
 
 public class UI {
-	public static void printTabuleiro(XadrezPeca[][] pecas) {
+	public static void printTabuleiro(ChessPiece[][] pecas) {
 		for (int i = 0; i < pecas.length; i++) {
 			System.out.print((8 - i) + " ");
 			for (int j = 0; j < pecas.length; j++) {
@@ -14,7 +14,7 @@ public class UI {
 		System.out.println("  a b c d e f g h");
 	}
 	
-	private static void printPeca(XadrezPeca peca) {
+	private static void printPeca(ChessPiece peca) {
 		if(peca == null) {
 			System.out.print("-");
 		}

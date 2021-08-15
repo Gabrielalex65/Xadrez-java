@@ -1,13 +1,13 @@
 package chess.pieces;
 
-import boardgame.Tabuleiro;
-import chess.Cor;
-import chess.XadrezPeca;
+import boardgame.Board;
+import chess.Color;
+import chess.ChessPiece;
 
-public class Rei extends XadrezPeca{
+public class Rei extends ChessPiece {
 
-	public Rei(Tabuleiro tabuleiro, Cor cor) {
-		super(tabuleiro, cor);
+	public Rei(Board board, Color color) {
+		super(board, color);
 	}
 	@Override
 	public String toString() {

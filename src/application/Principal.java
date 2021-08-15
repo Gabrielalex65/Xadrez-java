@@ -1,13 +1,11 @@
 package application;
 
-import boardgame.Posicao;
-import boardgame.Tabuleiro;
-import chess.XadrezPartida;
+import chess.ChessMatch;
 
 public class Principal {
 
 	public static void main(String[] args) {
-		XadrezPartida xadrezPartida = new XadrezPartida();
+		ChessMatch xadrezPartida = new ChessMatch();
 		UI.printTabuleiro(xadrezPartida.getPecas());
 		
 	}

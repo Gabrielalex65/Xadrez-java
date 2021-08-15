@@ -1,6 +1,6 @@
 package chess;
 
-public enum Cor {
+public enum Color {
 	PRETA,
 	BRANCA;
 }
